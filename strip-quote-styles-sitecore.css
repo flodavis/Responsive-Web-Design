@@ -1,0 +1,49 @@
+ .row {
+        margin: 0 -10px !important;
+    }
+
+    section[class$="-cont"] {
+        margin-right: -5px;
+    }
+
+    section.quote-cont .container {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    blockquote.quote.col-xs-12 {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+
+    blockquote {
+        padding: 10px 0px;
+    }
+
+    .quote-cont .quote-text {
+        display: none;
+    }
+
+    .quote-cont {
+        background-color: #fff;
+        text-align: center;
+        margin: 20px 0;
+        padding: 40px 0 10px;
+    }
+
+    section[class$="-cont"] {
+        margin-top: 0px;
+    }
+
+    .quote-author {
+        display: none;
+    }
+
+    .quote-cont blockquote {
+        font-size: 0px;
+    }
