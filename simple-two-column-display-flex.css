@@ -1,0 +1,23 @@
+   /*Only Display Flex on large Screens */
+
+    @media(min-width:1000px) {
+
+        .container {
+
+            display: flex;
+
+            justify-content: space-between;
+
+        }
+
+ 
+
+        .container div {
+
+            flex-basis: 49.5%;
+
+            box-sizing: border-box;
+
+        }
+
+    }
