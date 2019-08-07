@@ -1,0 +1,211 @@
+.midcap-logo {
+  max-width: 185px;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+/*CSS Only Responsive Menu */
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 3;
+  margin-left: -20px;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.navigation li a {
+  display: block;
+  text-decoration: none;
+  font-size: 22px;
+  color: #333;
+  padding: 13px 30px;
+  text-align: center;
+  border-bottom: 1px solid #ed8b00;
+}
+
+.navigation li a:hover {
+  color: #919191;
+}
+
+.navigation li a:active,
+.navigation li a.active {
+  font-weight: bold;
+  color: #ed8b00;
+}
+
+/* menu */
+
+.navigation .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon */
+
+.navigation .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.navigation .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.navigation .menu-icon .navicon:before,
+.navigation .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.navigation .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.navigation .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.navigation .menu-btn {
+  display: none;
+}
+
+.navigation .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.navigation .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.navigation .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/*ipads and small tablets */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 972px) {
+  .navigation .midcap-logo {
+  }
+}
+
+@media (min-width: 769px) {
+  /*Carillon Logo */
+
+  .midcap-logo {
+    display: inline-block;
+    padding-top: 1rem;
+    margin-left: 3rem;
+    padding-left: 16px;
+  }
+
+  .navigation li {
+    float: left;
+  }
+
+  .navigation li:last-child {
+    border-right: none;
+  }
+
+  .navigation li a {
+    padding: 20px 30px;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  .navigation li a::after:last-child {
+    border-right: none;
+  }
+
+  .navigation .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .navigation .menu-icon {
+    display: none;
+  }
+}
+
+/*Ipad and tablet devices */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  section#top.navigation {
+    margin-left: -30px;
+  }
+}
+
+/*Bootstrap 3 Overrides */
+
+@media (min-width: 1200px) {
+  div.rich-text div.container {
+    width: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  div.rich-text div.container {
+    width: auto;
+  }
+}
+
+/* Brand Bar */
+
+.brand-bar {
+  background-color: #919d9d;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100vw;
+}
+
+.investors-section a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.investors-section a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+@media (max-width: 48em) {
+  .brand-bar {
+    justify-content: center;
+  }
+}
