@@ -1,0 +1,47 @@
+/*Default Typography */
+
+/*Standard H1s etc. Hero Text with Image H1*/
+
+.mc-responsive-video-section h1 {
+  font-size: 30px;
+  margin-top: 100px;
+  margin-left: 40px;
+  text-align: left;
+  font-weight: 400;
+}
+
+/*1st Section Header H1*/
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+/*Hero Text with Video*/
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Default Paragraph */
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px/1.5;
+  font-weight: 300;
+  color: #474747;
+  margin: 0 0 20px;
+}
+
+/*Typography with video*/
+.mc-title {
+  text-align: left;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.mc-sub {
+  font-size: 45px;
+  font-weight: bold;
+  color: #fff;
+  text-align: left;
+}
