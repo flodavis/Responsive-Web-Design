@@ -1,0 +1,38 @@
+/*IE Specific Styles */
+
+/*IE 10 and Above */
+_:-ms-lang(x),
+.ie10up {
+  property: value;
+}
+
+/*IE 11 and Above */
+_:-ms-fullscreen,
+:root .CLASS_NAME {
+  property: value;
+}
+
+/* Specific Examples */
+_:-ms-fullscreen,
+:root .toggleMultiSelect .filter {
+  width: 566px;
+}
+
+@media only screen and (max-width: 1920px) {
+  .toggleMultiSelect .filter {
+    width: 566px;
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .toggleMultiSelect .filter {
+      width: 575px;
+    }
+  }
+}
+
+@media all and (min-width: 1000px) and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+  .carillon-ratings div {
+    flex-basis: 46%;
+  }
+}
