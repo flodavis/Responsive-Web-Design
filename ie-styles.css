@@ -33,6 +33,6 @@ _:-ms-fullscreen,
 @media all and (min-width: 1000px) and (-ms-high-contrast: none),
   (-ms-high-contrast: active) {
   .carillon-ratings div {
-    flex-basis: 46%;
+    flex-basis: 47%;
   }
 }
