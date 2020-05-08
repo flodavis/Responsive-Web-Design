@@ -4,6 +4,7 @@
 
     section[class$="-cont"] {
         margin-right: -5px;
+        margin-bottom: 0;
     }
 
     section.quote-cont .container {
